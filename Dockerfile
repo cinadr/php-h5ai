@@ -1,4 +1,4 @@
-FROM php-alpine:latest
+FROM php:fpm-alpine
 MAINTAINER Zimmermann Zsolt
 
 RUN apk update && apk upgrade && apk add --no-cache ffmpeg imagemagick coreutils zip libjpeg-turbo-dev libpng-dev zlib-dev freetype-dev
